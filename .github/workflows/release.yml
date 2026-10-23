@@ -55,7 +55,7 @@ jobs:
         id: mesa
         run: |
           set -euo pipefail
-          echo "commit=$(scripts/fetch_mesa.sh mesa main)" >> "$GITHUB_OUTPUT"
+          echo "commit=$(scripts/fetch_mesa.sh mesa c90ff433291a5c3ff5cea9913bbebeef9cd4e885)" >> "$GITHUB_OUTPUT"
           echo "version=$(tr -d '[:space:]' < mesa/VERSION)" >> "$GITHUB_OUTPUT"
       - name: Anything new for Turnip
         id: changed
